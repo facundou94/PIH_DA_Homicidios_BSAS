@@ -17,7 +17,7 @@
 
 *[Dashboard Introducción](#dashboard-introducción)
 
-*[Dashboard KPIs](#dashboard:-kpis)
+*[Dashboard KPIs](#dashboard-kpis)
 
 *[Conclusiones Finales](#conclusiones-finales)
 
@@ -93,7 +93,7 @@ ACCIONES DE MITIGACIÓN:
 </p>
 
 <p align="center">
-   <img src="Imagenes/DASHBOARD_1.JPG" width="400">
+   <img src="Imagenes/DASHBOARD_1.JPG" width="700">
 </p>
 <p align="center">
    <em>Figura 4: Dashboard de introducción </em>
@@ -132,14 +132,14 @@ Resultado final: Se logró bajar casi en un 30% la cantidad de homicidios en la 
 </p>
 
 <p align="center">
-   <img src="Imagenes/DASHBOARD_2.JPG" width="400">
+   <img src="Imagenes/DASHBOARD_2.JPG" width="700">
 </p>
 <p align="center">
    <em>Figura 5: Dashboard de KPIS 1 </em>
 </p>
 
 <p align="center">
-   <img src="Imagenes/DASHBOARD_3.JPG" width="400">
+   <img src="Imagenes/DASHBOARD_3.JPG" width="700">
 </p>
 <p align="center">
    <em>Figura 6: Dashboard de KPIS 2 </em>
