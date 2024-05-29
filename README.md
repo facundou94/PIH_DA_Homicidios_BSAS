@@ -2,7 +2,7 @@
 <h1 align="center"> Proyecto Individual Nº 2  </h1>
 <h3 align="center"> Siniestros Viales </h3>
 <h3 align="center"> Autor: Bioing. Facundo Urteaga  </h3>
-<h3 align="center"> Dashboard público del proyecto: https://app.powerbi.com/view?r=eyJrIjoiZjU2OWYxMjQtYTA3ZS00NzJmLTk1OTQtZmUwZTczNGU0YzdhIiwidCI6IjQ4MWNkNjcxLTY3NWMtNDA0MC05NzFmLWZjMDBmZTk1OGY2NiIsImMiOjR9 </h3>
+<h3 align="center"> Dashboard público del proyecto: [https://app.powerbi.com/view?r=eyJrIjoiZjU2OWYxMjQtYTA3ZS00NzJmLTk1OTQtZmUwZTczNGU0YzdhIiwidCI6IjQ4MWNkNjcxLTY3NWMtNDA0MC05NzFmLWZjMDBmZTk1OGY2NiIsImMiOjR9](https://app.powerbi.com/view?r=eyJrIjoiZjU2OWYxMjQtYTA3ZS00NzJmLTk1OTQtZmUwZTczNGU0YzdhIiwidCI6IjQ4MWNkNjcxLTY3NWMtNDA0MC05NzFmLWZjMDBmZTk1OGY2NiIsImMiOjR9) </h3>
 
 <p align="left">
    <img src="https://img.shields.io/badge/ESTADO-EN%20DESAROLLO-green">
