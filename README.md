@@ -106,28 +106,28 @@ Herramientas utilizadas: POWER BI DESKTOP
 Los KPIs se detallaron en los lienzos "KPIs 1" (Figura 5) y "KPIs 2" (Figura 6). A continuación se detalla cada uno de los 4 KPIs diseñados.
 
 KPI 1 
-Objetivo: Reducción de un 10% de la tasa de homicidios respecto al semestre anterior
-Justificación: KPI sencillo que tiene como finalidad reducir progresivamente la tasa de homicidios en cada semestre
-Evolución: A partir del semestre 7 se observan buenos resultados que luego son alterados por la pandemia de COVID y otros factores
-Resultado final: Se logró bajar casi en un 40% la tasa de homicidios respecto al comienzo de la gestión
+* Objetivo: Reducción de un 10% de la tasa de homicidios respecto al semestre anterior
+* Justificación: KPI sencillo que tiene como finalidad reducir progresivamente la tasa de homicidios en cada semestre
+* Evolución: A partir del semestre 7 se observan buenos resultados que luego son alterados por la pandemia de COVID y otros factores
+* Resultado final: Se logró bajar casi en un 40% la tasa de homicidios respecto al comienzo de la gestión
 
 KPI 2 
-Objetivo: Reducción de un 7% de la cantidad de accidentes mortales de motos respecto al año anterior
-Justificación: Se detectó un gran porcentaje de víctimas motociclistas por lo que se buscó una disminución progresiva de estos homicidios
-Evolución: Se observa una buena evolución a partir del año 2018. El último año los resultados no fueron satisfactorios
-Resultado final: Se logró bajar en un 17% la cantidad de homicidios de MOTOCICLISTAS respecto al comienzo de la gestión
+* Objetivo: Reducción de un 7% de la cantidad de accidentes mortales de motos respecto al año anterior
+* Justificación: Se detectó un gran porcentaje de víctimas motociclistas por lo que se buscó una disminución progresiva de estos homicidios
+* Evolución: Se observa una buena evolución a partir del año 2018. El último año los resultados no fueron satisfactorios
+* Resultado final: Se logró bajar en un 17% la cantidad de homicidios de MOTOCICLISTAS respecto al comienzo de la gestión
 
 KPI 3 
-Objetivo: Que COMUNA 1 no supere en mas de un 20% la tasa de homicidios semestral de PEATONES promedio de toda CABA
-Justificación: Al detectarse un gran porcentaje anormal de homicidios de PEATONES en la COMUNA 1 se buscó reducir esta tasa de homicidios y equipararla al promedio de CABA
-Evolución: A partir del octavo semestre se observan resultados satisfactorios, sin embargo al finalizar la gestión nos encontramos por encima del KPI
-Resultado final: Se logró bajar a la mitad la tasa de homicidios de PEATONES respecto al comienzo de la gestión
+* Objetivo: Que COMUNA 1 no supere en mas de un 20% la tasa de homicidios semestral de PEATONES promedio de toda CABA
+* Justificación: Al detectarse un gran porcentaje anormal de homicidios de PEATONES en la COMUNA 1 se buscó reducir esta tasa de homicidios y equipararla al promedio de CABA
+* Evolución: A partir del octavo semestre se observan resultados satisfactorios, sin embargo al finalizar la gestión nos encontramos por encima del KPI
+* Resultado final: Se logró bajar a la mitad la tasa de homicidios de PEATONES respecto al comienzo de la gestión
 
 KPI 4 
-Objetivo: Mantener los homicidios viales en FH madrugada (3 a 7) por debajo de la FH tarde (4 a 8)
-Justificación: La nocturnidad de la COMUNA 1 afecta drásticamente a los homicidios ocurridos durante la madrugada. En este KPI se busca atenuar los homicidios en esta FH, buscando equipararlo con la FH de tarde, la cual en general mantiene una tasa regular que solo se ve afectada por factores externos, por lo que es un buen indicador.
-Evolución: Se observa un acercamiento prometedor de la FH madrugada en cantidad de víctimas que luego es abruptamente interrumpido por la pandemia de COVID.
-Resultado final: Se logró bajar casi en un 30% la cantidad de homicidios en la FH madrugada y además se observa una tendencia alentadora
+* Objetivo: Mantener los homicidios viales en FH madrugada (3 a 7) por debajo de la FH tarde (4 a 8)
+* Justificación: La nocturnidad de la COMUNA 1 afecta drásticamente a los homicidios ocurridos durante la madrugada. En este KPI se busca atenuar los homicidios en esta FH, buscando equipararlo con la FH de tarde, la cual en general mantiene una tasa regular que solo se ve afectada por factores externos, por lo que es un buen indicador.
+* Evolución: Se observa un acercamiento prometedor de la FH madrugada en cantidad de víctimas que luego es abruptamente interrumpido por la pandemia de COVID.
+* Resultado final: Se logró bajar casi en un 30% la cantidad de homicidios en la FH madrugada y además se observa una tendencia alentadora
 
 </p>
 
