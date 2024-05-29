@@ -28,16 +28,20 @@ Los siniestros viales, que incluyen colisiones entre vehículos, atropellos y ch
 
 En Argentina, los siniestros viales son la principal causa de muertes violentas, con cerca de 4.000 muertes anuales. Entre 2018 y 2022, se registraron 19.630 muertes en el país, lo que equivale a 11 personas fallecidas por día. En 2022, hubo 3.828 muertes fatales por accidentes de tránsito, y la probabilidad de morir en un siniestro vial es significativamente mayor que en un acto de inseguridad delictiva. En respuesta a esta problemática, el Observatorio de Movilidad y Seguridad Vial (OMSV) de Buenos Aires ha solicitado la elaboración de un proyecto de análisis de datos para ayudar a las autoridades locales a tomar medidas para reducir las víctimas fatales de los siniestros viales. Para este propósito, se ha proporcionado un dataset sobre homicidios en siniestros viales en Buenos Aires entre 2016 y 2021, que incluye información detallada en formato xlsx con hojas de datos y diccionarios.
 </p>
-## 1 Extracción
+
+## Rol del Analista de Datos
 
 </p>
-La fase de extracción de datos implicó la implementación de funciones específicas para recuperar información de los archivos "users_items", "users_reviews" y "steam_games". Inicialmente, se planeó desarrollar una función general que pudiera utilizarse para los tres archivos; sin embargo, debido a las singularidades de cada uno, resultó necesario crear una función de extracción individual para cada archivo. Este proceso representó una de las etapas más extensas del proyecto, ya que implicó principalmente un enfoque de prueba y error basado en la verificación empírica. Los archivos originales en formato json, debido a su tamaño, no están incluídos en este repositorio, pero se puede acceder a ellos en el siguiente repositorio: https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj
+Desde el año 2017 formo parte del equipo de trabajo del OMSV de la Ciudad Autónoma de Buenos Aires como Data Analytics. Ya pasaron 4 años, elecciones de por medio y ganó un partido político distinto al que nos designo en su momento para este trabajo. Si bien no son las mejores noticias, las nuevas autoridades nos dieron la posibilidad de defender el trabajo hecho hasta ahora y, en caso de mostrar resultados satisfactorios, tenemos la oportunidad de seguir en el cargo con estas nuevas autoridades. Para esto, debemos demostrar que producto de nuestro monitoreo y medidas tomada a lo largo de estos años, la Ciudad Autónoma de Buenos Aires se encuentra significativamente mejor en relación a víctimas fatales en siniestros viales.
 </p>
 
-## 2 Transformación
+## Exploratory Data Analysis
 
 </p>
-En este proceso, se lleva a cabo el desanidado de columnas específicas que contenían datos anidados, la normalización y la limpieza general de los datos. Además, se realizan una serie de análisis que podrían considerarse una primera parte de EDA. Por ejemplo, identificar que el tiempo jugado por los usuarios  las últimas dos semanas (last_2_weeks) sea "lógico" (Figura 1), o que la distribución del porcentaje de opiniones positivas de los juegos tenga sentido (Figura 2).
+Herramientas utilizadas: Lenguaje Python en IDE Microsoft Visual Studio Code
+Con los datos recolectados durante estos años de siniestros que involucran homicidios, se realizó un análisis exploratorio de los datos. Inicialmente se realizó un control de la existencia de datos nulos y outliers o información incompleta en las columnas. No se detectaron outliers, pero se detectaron datos faltantes bajo la codificaciòn "SD" lo cual facilitó el procesamiento.
+La segunda parte consistió en explorar por primera vez los datos en búsqueda de patrones que puedan facilitar posteriormente las conclusiones, la creación de nuevos KPIs y a su vez detectar variables que no muestran ningun tipo de variación o comportamiento para no perder tiempo luego. De esta etapa se destaca que se encontraron comportamientos interesantes en el la distribución de los hechos por tipo de calle (Figura 1), y cantidad de hechos por franja horaria (Figura 2).
+En una tercera parte, se procesaron las columnas de "cruce" y "altura" y se sintetizaron en una sola variable que categorizaba si el siniestro ocurrió en una esquina, en la cuadra o directamente en una autopista (Figura 3).
 </p>
 
 <p align="center">
@@ -54,14 +58,30 @@ En este proceso, se lleva a cabo el desanidado de columnas específicas que cont
    <em>Figura 2: Densidad de opiniones positivas totales (de 0 a 100 %) </em>
 </p>
 
-## 3 EDA
+## Dashboard: Introducción
 
 </p>
-En esta etapa se realiza el análisis exploratorio general, lo cual servirá para entender el comportamiento y el contexto de los datos antes de realizar las funciones y algoritmos posteriores. Dentro de esta etapa se destaca:
-* La evolución de la distribución de precios segun las fechas de lanzamiento, donde se observa una tendencia de disminución del promedio de los precios en el paso de los años, pero a su vez por lógica los juegos más caros son los más actuales aunque sean los menos (Figura 3).
-* El crecimiento exponencial (Se osberva como un crecimiento lineal ya que es el logaritmo de la frecuencia) de lanzamiento de juegos en el paso de los años (Figura 4).
-* La cantidad de items por usuario, donde la mayoría contiene entre 10 y 100 items (Figura 5).
-* Las etiquetas mas preponderantes de tags, specs y genres (Figuras 6, 7 y 8)
+Herramientas utilizadas: POWER BI DESKTOP
+La introducción del dashboard corresponde a la primera página "INTRO" del proyecto de POWER BI (Figura 4). El propósito de este primer lienzo, es interiorizar al espectador con el contexto inicial en el cual nos encontramos al tomar posesión del cargo en el año 2017, y los aspectos relevantes que osbervamos como "Puntos clave" a tener en cuenta en las políticas de seguridad vial en los años próximos para mitigar los problemas que detectamos.
+
+PUNTOS CLAVES:
+
+* Alto número de víctimas viales totales
+* Accidentes en motocicleta significativos
+* La COMUNA 1 es la que tiene la mayor tasa de homicidios
+* COMUNA 1: Franja Horaria de madrugada con gran tasa de homicidios
+* COMUNA 1: Homicidios viales preponderantemente de PEATONES
+* La mayor cantidad de homicidios ocurre en las ESQUINAS de calles y avenidas
+
+ACCIONES DE MITIGACIÓN:
+
+* Mejorar los cursos de educación vial al momento de solicitar o renovar el carnet
+* Mayores controles a motociclistas y aumento de penalización por el NO uso de CASCO
+* En la COMUNA 1 mayor cantidad de controles de alcoholemia en las horas claves de la madrugada
+* En Discotecas de la COMUNA 1 aumento de campañas y estrategias para la promoción de "conductores designados"
+* Para la reducción de PEATONES circulando durante la madrugada se establecieron precios promocionales subsidiados de servicios de TAXIS durante horas clave
+* Mejora de la señalización en esquinas y se agregaron lomos de burro estratégicos
+
 </p>
 
 <p align="center">
@@ -99,10 +119,13 @@ En esta etapa se realiza el análisis exploratorio general, lo cual servirá par
    <em>Figura 7: Proporciones de genres </em>
 </p>
 
-## 4 Sentiment Analysis
+## Dashboard: KPIs
 
 </p>
-Para realizar el análisis de sentimientos, se emplea la biblioteca NLTK en la etapa de tokenización de las frases. Este proceso es cíclico, ya que de manera empírica se observan palabras neutrales que se repiten con alta frecuencia y que no son tenidas en cuenta por la biblioteca de stopwords, siendo agregadas para reducir la carga de palabras en el posterior procesamiento. En esta etapa, nos apoyamos en herramientas como la nube de palabras (Figura 9). Posteriormente, para finalizar el análisis de sentimientos, se utilizan los métodos proporcionados por la función SentimentIntensityAnalyzer de la biblioteca Vader. Para evaluar el desempeño del algoritmo, se contrastan las reseñas positivas elaboradas por usuarios con el resultado del análisis de sentimientos. Lo que se debe observar principalmente en esta instancia es que las reseñas positivas coincidan con un análisis de sentimientos positivo en la mayoría de los casos (Figura 10).
+Herramientas utilizadas: POWER BI DESKTOP
+Los KPIs se detallaron en los lienzos "KPIs 1" (Figura x) y "KPIs 2" (Figura x). A continuación se detalla cada uno de los 4 KPIs diseñados.
+
+KPI 1:  Reducción de un 10% de la tasa de homicidios respecto al semestre anterior
 </p>
 
 <p align="center">
