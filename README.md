@@ -17,7 +17,7 @@
 
 *[Dashboard Introducción](#dashboard-introducción)
 
-*[Dashboard: KPIs](#dashboard:-kpis)
+*[Dashboard KPIs](#dashboard:-kpis)
 
 *[Conclusiones Finales](#conclusiones-finales)
 
@@ -45,18 +45,26 @@ En una tercera parte, se procesaron las columnas de "cruce" y "altura" y se sint
 </p>
 
 <p align="center">
-   <img src="Imagenes/1_dens_2_weeks.jpg" width="400">
+   <img src="Imagenes/TIPO_CALLE.png" width="400">
 </p>
 <p align="center">
-   <em>Figura 1: Distribución de tiempo jugado las últimas dos semanas por usuario </em>
+   <em>Figura 1: Distribución de homicidios por tipo de calle </em>
 </p>
 
 <p align="center">
-   <img src="Imagenes/2_dens_op_pos.jpg" width="400">
+   <img src="Imagenes/FRANJA_HORARIA.png" width="400">
 </p>
 <p align="center">
-   <em>Figura 2: Densidad de opiniones positivas totales (de 0 a 100 %) </em>
+   <em>Figura 2: Distribución de homicidios por franja horaria </em>
 </p>
+
+<p align="center">
+   <img src="Imagenes/TIPO_ZONA.png" width="400">
+</p>
+<p align="center">
+   <em>Figura 2: Distribución de homicidios por tipo de zona </em>
+</p>
+
 
 ## Dashboard Introducción
 
@@ -85,45 +93,17 @@ ACCIONES DE MITIGACIÓN:
 </p>
 
 <p align="center">
-   <img src="Imagenes/3_violin_precios.jpg" width="400">
+   <img src="Imagenes/DASHBOARD_1.JPG" width="400">
 </p>
 <p align="center">
-   <em>Figura 3: Violin Plot de precio de venta de los juegos por año de lanzamiento </em>
+   <em>Figura 4: Dashboard de introducción </em>
 </p>
 
-<p align="center">
-   <img src="Imagenes/4_cantidad_juegos.jpg" width="400">
-</p>
-<p align="center">
-   <em>Figura 4: Cantidad de juegos lanzados a la plataforma por año </em>
-</p>
-
-<p align="center">
-   <img src="Imagenes/6_proporcion_tag.jpg" width="400">
-</p>
-<p align="center">
-   <em>Figura 5: Proporciones de tags </em>
-</p>
-
-<p align="center">
-   <img src="Imagenes/7_proporcion_spec.jpg" width="400">
-</p>
-<p align="center">
-   <em>Figura 6: Proporciones de specs </em>
-</p>
-
-<p align="center">
-   <img src="Imagenes/8_proporcion_genres.jpg" width="400">
-</p>
-<p align="center">
-   <em>Figura 7: Proporciones de genres </em>
-</p>
-
-## Dashboard: KPIs
+## Dashboard KPIs
 
 </p>
 Herramientas utilizadas: POWER BI DESKTOP
-Los KPIs se detallaron en los lienzos "KPIs 1" (Figura x) y "KPIs 2" (Figura x). A continuación se detalla cada uno de los 4 KPIs diseñados.
+Los KPIs se detallaron en los lienzos "KPIs 1" (Figura 5) y "KPIs 2" (Figura 6). A continuación se detalla cada uno de los 4 KPIs diseñados.
 
 KPI 1 
 Objetivo: Reducción de un 10% de la tasa de homicidios respecto al semestre anterior
@@ -152,17 +132,17 @@ Resultado final: Se logró bajar casi en un 30% la cantidad de homicidios en la 
 </p>
 
 <p align="center">
-   <img src="Imagenes/9_nube_palabras.jpg" width="400">
+   <img src="Imagenes/DASHBOARD_2.JPG" width="400">
 </p>
 <p align="center">
-   <em>Figura 9: Nube de palabras </em>
+   <em>Figura 5: Dashboard de KPIS 1 </em>
 </p>
 
 <p align="center">
-   <img src="Imagenes/10_barras_sa.jpg" width="400">
+   <img src="Imagenes/DASHBOARD_3.JPG" width="400">
 </p>
 <p align="center">
-   <em>Figura 10: Comparación entre reseñas y análisis de sentimiento </em>
+   <em>Figura 6: Dashboard de KPIS 2 </em>
 </p>
 
 ## Conclusiones Finales
