@@ -15,7 +15,7 @@
 
 *[Exploratory Data Analysis](#exploratory-data-analysis)
 
-*[Dashboard: Introducción](#dashboard:-introducción)
+*[Dashboard Introducción](#dashboard-introducción)
 
 *[Dashboard: KPIs](#dashboard:-kpis)
 
@@ -58,7 +58,7 @@ En una tercera parte, se procesaron las columnas de "cruce" y "altura" y se sint
    <em>Figura 2: Densidad de opiniones positivas totales (de 0 a 100 %) </em>
 </p>
 
-## Dashboard: Introducción
+## Dashboard Introducción
 
 </p>
 Herramientas utilizadas: POWER BI DESKTOP
@@ -125,7 +125,30 @@ ACCIONES DE MITIGACIÓN:
 Herramientas utilizadas: POWER BI DESKTOP
 Los KPIs se detallaron en los lienzos "KPIs 1" (Figura x) y "KPIs 2" (Figura x). A continuación se detalla cada uno de los 4 KPIs diseñados.
 
-KPI 1:  Reducción de un 10% de la tasa de homicidios respecto al semestre anterior
+KPI 1 
+Objetivo: Reducción de un 10% de la tasa de homicidios respecto al semestre anterior
+Justificación: KPI sencillo que tiene como finalidad reducir progresivamente la tasa de homicidios en cada semestre
+Evolución: A partir del semestre 7 se observan buenos resultados que luego son alterados por la pandemia de COVID y otros factores
+Resultado final: Se logró bajar casi en un 40% la tasa de homicidios respecto al comienzo de la gestión
+
+KPI 2 
+Objetivo: Reducción de un 7% de la cantidad de accidentes mortales de motos respecto al año anterior
+Justificación: Se detectó un gran porcentaje de víctimas motociclistas por lo que se buscó una disminución progresiva de estos homicidios
+Evolución: Se observa una buena evolución a partir del año 2018. El último año los resultados no fueron satisfactorios
+Resultado final: Se logró bajar en un 17% la cantidad de homicidios de MOTOCICLISTAS respecto al comienzo de la gestión
+
+KPI 3 
+Objetivo: Que COMUNA 1 no supere en mas de un 20% la tasa de homicidios semestral de PEATONES promedio de toda CABA
+Justificación: Al detectarse un gran porcentaje anormal de homicidios de PEATONES en la COMUNA 1 se buscó reducir esta tasa de homicidios y equipararla al promedio de CABA
+Evolución: A partir del octavo semestre se observan resultados satisfactorios, sin embargo al finalizar la gestión nos encontramos por encima del KPI
+Resultado final: Se logró bajar a la mitad la tasa de homicidios de PEATONES respecto al comienzo de la gestión
+
+KPI 4 
+Objetivo: Mantener los homicidios viales en FH madrugada (3 a 7) por debajo de la FH tarde (4 a 8)
+Justificación: La nocturnidad de la COMUNA 1 afecta drásticamente a los homicidios ocurridos durante la madrugada. En este KPI se busca atenuar los homicidios en esta FH, buscando equipararlo con la FH de tarde, la cual en general mantiene una tasa regular que solo se ve afectada por factores externos, por lo que es un buen indicador.
+Evolución: Se observa un acercamiento prometedor de la FH madrugada en cantidad de víctimas que luego es abruptamente interrumpido por la pandemia de COVID.
+Resultado final: Se logró bajar casi en un 30% la cantidad de homicidios en la FH madrugada y además se observa una tendencia alentadora
+
 </p>
 
 <p align="center">
@@ -142,47 +165,9 @@ KPI 1:  Reducción de un 10% de la tasa de homicidios respecto al semestre anter
    <em>Figura 10: Comparación entre reseñas y análisis de sentimiento </em>
 </p>
 
-## 5 Sistema de Recomendación
+## Conclusiones Finales
 
 </p>
-Se realiza un sistema de recomendación basado en Videojuego. El algoritmo recibe un videojuego y recomienda otros cinco de similares características. Se desarrolló un modelo basado en el algoritmo K Vecinos mas Cercanos y utilizando como métrica la similitud del coseno. Se detallan a continuación las distintas versiones del modelo con sus características y modificaciones respecto a las versiones previas. El desempeño de los modelos se evaluó a partir de una selección de videojuegos clásicos y variados en cuanto a género, época y características. Se utiliza como modelo final la cuarta versión (V4) (Figura 11).
+Si bien los objetivos planteados por los KPIS fueron parcialmente logrados en distintos instantes de tiempo, el hecho de plantearlos definió una hoja de ruta en la gestión para lograr una reducción relevante y considerable en los homicidios de siniestros viales tanto en general como en particular en zonas y categorías estratégicas.
 
-<p align="center">
-   <img src="Imagenes/11_sist_reco.JPG" width="400">
-</p>
-<p align="center">
-   <em>Figura 11: Sistema de Recomendación. Versiones </em>
-</p>
-
-* V1: Modelo inicial. Se utilizan las etiquetas de "genres", "tags" y "specs" como variables dummies (1 presencia, 0 ausencia) y se entrena el modelo. El desempeño de este modelo es regular
-* V2: Segunda Versión. Se eliminan algunas etiquetas, principalmente de "tags" y "specs" que, a criterio del científico de datos, no aportan información y pueden generar confusión al momento de clasificar. Esto se debe a que son etiquetas extrañas y que no suelen discriminar la preferencia o no de un Usuario al momento de elegir un videojuego. Además se pondera genres*2 debido a que las etiquetas en general son pocas pero mas concretas en relación al estilo del videojuego. Ocurre lo contrario con tags que es penalizado en un factor de 0.5 debido a la cantidad de etiquetas que poseen en general los videojuegos, y además, por un estudio mas metódico, se descubre que estas etiquetas son definidas por usuarios y en muchos casos no corresponden a las carecterísticas del videojuego. Un ejemplo sencillo es el juego de fútbol PES 2018 que posee la etiqueta de "Gore" y "Heist". El desempeño de este modelo es aceptable
-* V3: Tercera Versión. Se elimina el contenido descargable, DLCs y expansiones, ya que en general no deseamos que se recomiende ese tipo de producto. Además, se agrega como variable la fecha de lanzamiento (agrupada en lustros) ya que en general los usuarios suelen desear conocer videojuegos de una misma época. De todas maneras esto no es exclusivo, por lo que se agrega como una variable mas que afecte moderadamente al sistema de recomendación. El desempeño de este modelo es muy bueno
-* V4: Cuarta Versión. Al observar que en general los videojuegos tienen pocas etiquetas "genres" y muchas etiquetas "specs" y "tags", entendiendo que las etiquetas "genres" son las mas valiosas y representativas del videojuego y, por último, sabiendo que al valer todas las etiquetas lo mismo, la influencia de pocas etiquetas "genres" se vería diluída por muchas etiquetas "specs" o "tags" se procede a penalizar la influencia de estas últimas a partir de dividir cada etiqueta por el total de etiquetas en su categoría. Entonces, por ejemplo, si el videojuego posee 10 etiquetas "tags", cada una pasaría a valer 1/10 o 0.1 en lugar de 1. El desempeño de este modelo es excelente.
-</p>
-
-### Desempeño del modelo
-
-Indices de prueba. Juegos de diferentes características (Los simbolos ++ o -- indican un cambio positivo o negativo respecto al desempeño del modelo anterior)
-
-------- JUEGO ---------|---id---|-------Desempeño--------
------------------------|--------|------------------------
-Counter Strike         |     10 | muy bien
-PES 2018               | 592580 | muy bien ++
-AGE III                | 105450 | muy bien
-Simcity 4              |  24780 | muy bien
-Tennis Elbow 2013      | 346470 | regular (falta que recomiende otros juegos de tennis)
-Civilization IV        |  16810 | excelente
-Darksiders             |  50620 | excelente
-Fallout NV             |  22380 | muy bien ++ (pueden faltar juegos de la franquicia)
-Dragon Age Origins     |  47810 | excelente
-Star Wars Jedi Knight  |   6020 | excelente ++
-NFS Shift              |  24870 | excelente ++
-Final DOOM             |   2290 | excelente
-Earthworm Jim          | 901147 | muy bien   
-
-
-## 6 Funciones y deploying
-
-</p>
-Se realizan una serie de funciones de búsqueda de estadísticas relevantes de la base de datos, detalladas en el archivo funciones.py. Se implementan las mismas en una API mediante la interfaz fastAPI y el deploying en el servidor de RENDER. El mismo está disponible en la página: https://pi-henry-urteaga.onrender.com/docs
 </p>
