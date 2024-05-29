@@ -25,24 +25,26 @@
 
 <p align="justify">
 Los siniestros viales, que incluyen colisiones entre vehículos, atropellos y choques con objetos fijos, son una preocupación importante en ciudades con alto volumen de tráfico y densidad poblacional, como Buenos Aires. Estos accidentes pueden causar desde daños materiales hasta lesiones graves o fatales, afectando significativamente la seguridad de los residentes y la infraestructura vial. Las tasas de mortalidad por siniestros viales, calculadas como el número de muertes por habitantes o vehículos registrados, son un indicador crucial de la seguridad vial. Reducir estas tasas es esencial para proteger vidas, y esto requiere la implementación de medidas preventivas como educación vial, cumplimiento de normas de tráfico, mejoras en la infraestructura y promoción de vehículos seguros.
-
+</p>
+<p align="justify">
 En Argentina, los siniestros viales son la principal causa de muertes violentas, con cerca de 4.000 muertes anuales. Entre 2018 y 2022, se registraron 19.630 muertes en el país, lo que equivale a 11 personas fallecidas por día. En 2022, hubo 3.828 muertes fatales por accidentes de tránsito, y la probabilidad de morir en un siniestro vial es significativamente mayor que en un acto de inseguridad delictiva. En respuesta a esta problemática, el Observatorio de Movilidad y Seguridad Vial (OMSV) de Buenos Aires ha solicitado la elaboración de un proyecto de análisis de datos para ayudar a las autoridades locales a tomar medidas para reducir las víctimas fatales de los siniestros viales. Para este propósito, se ha proporcionado un dataset sobre homicidios en siniestros viales en Buenos Aires entre 2016 y 2021, que incluye información detallada en formato xlsx con hojas de datos y diccionarios.
 </p>
 
 ## Rol del Analista de Datos
 
-</p>
+<p align="justify">
 Desde el año 2017 formo parte del equipo de trabajo del OMSV de la Ciudad Autónoma de Buenos Aires como Data Analytics. Ya pasaron 4 años, elecciones de por medio y ganó un partido político distinto al que nos designo en su momento para este trabajo. Si bien no son las mejores noticias, las nuevas autoridades nos dieron la posibilidad de defender el trabajo hecho hasta ahora y, en caso de mostrar resultados satisfactorios, tenemos la oportunidad de seguir en el cargo con estas nuevas autoridades. Para esto, debemos demostrar que producto de nuestro monitoreo y medidas tomada a lo largo de estos años, la Ciudad Autónoma de Buenos Aires se encuentra significativamente mejor en relación a víctimas fatales en siniestros viales.
 </p>
 
 ## Exploratory Data Analysis
 
-</p>
+<p align="justify">
 Herramientas utilizadas: Lenguaje Python en IDE Microsoft Visual Studio Code
 Con los datos recolectados durante estos años de siniestros que involucran homicidios, se realizó un análisis exploratorio de los datos. Inicialmente se realizó un control de la existencia de datos nulos y outliers o información incompleta en las columnas. No se detectaron outliers, pero se detectaron datos faltantes bajo la codificaciòn "SD" lo cual facilitó el procesamiento.
 La segunda parte consistió en explorar por primera vez los datos en búsqueda de patrones que puedan facilitar posteriormente las conclusiones, la creación de nuevos KPIs y a su vez detectar variables que no muestran ningun tipo de variación o comportamiento para no perder tiempo luego. De esta etapa se destaca que se encontraron comportamientos interesantes en el la distribución de los hechos por tipo de calle (Figura 1), y cantidad de hechos por franja horaria (Figura 2).
 En una tercera parte, se procesaron las columnas de "cruce" y "altura" y se sintetizaron en una sola variable que categorizaba si el siniestro ocurrió en una esquina, en la cuadra o directamente en una autopista (Figura 3).
 </p>
+
 
 <p align="center">
    <img src="Imagenes/TIPO_CALLE.png" width="400">
@@ -51,12 +53,14 @@ En una tercera parte, se procesaron las columnas de "cruce" y "altura" y se sint
    <em>Figura 1: Distribución de homicidios por tipo de calle </em>
 </p>
 
+
 <p align="center">
    <img src="Imagenes/FRANJA_HORARIA.png" width="400">
 </p>
 <p align="center">
    <em>Figura 2: Distribución de homicidios por franja horaria </em>
 </p>
+
 
 <p align="center">
    <img src="Imagenes/TIPO_ZONA.png" width="400">
@@ -66,11 +70,13 @@ En una tercera parte, se procesaron las columnas de "cruce" y "altura" y se sint
 </p>
 
 
+
 ## Dashboard Introducción
 
-</p>
+<p align="justify">
 Herramientas utilizadas: POWER BI DESKTOP
 La introducción del dashboard corresponde a la primera página "INTRO" del proyecto de POWER BI (Figura 4). El propósito de este primer lienzo, es interiorizar al espectador con el contexto inicial en el cual nos encontramos al tomar posesión del cargo en el año 2017, y los aspectos relevantes que osbervamos como "Puntos clave" a tener en cuenta en las políticas de seguridad vial en los años próximos para mitigar los problemas que detectamos.
+</p>
 
 PUNTOS CLAVES:
 
@@ -92,12 +98,14 @@ ACCIONES DE MITIGACIÓN:
 
 </p>
 
+
 <p align="center">
    <img src="Imagenes/DASHBOARD_1.JPG" width="700">
 </p>
 <p align="center">
    <em>Figura 4: Dashboard de introducción </em>
 </p>
+
 
 ## Dashboard KPIs
 
@@ -131,12 +139,14 @@ KPI 4
 
 </p>
 
+
 <p align="center">
    <img src="Imagenes/DASHBOARD_2.JPG" width="700">
 </p>
 <p align="center">
    <em>Figura 5: Dashboard de KPIS 1 </em>
 </p>
+
 
 <p align="center">
    <img src="Imagenes/DASHBOARD_3.JPG" width="700">
@@ -145,9 +155,9 @@ KPI 4
    <em>Figura 6: Dashboard de KPIS 2 </em>
 </p>
 
+
 ## Conclusiones Finales
 
-</p>
+<p align="justify">
 Si bien los objetivos planteados por los KPIS fueron parcialmente logrados en distintos instantes de tiempo, el hecho de plantearlos definió una hoja de ruta en la gestión para lograr una reducción relevante y considerable en los homicidios de siniestros viales tanto en general como en particular en zonas y categorías estratégicas.
-
 </p>
